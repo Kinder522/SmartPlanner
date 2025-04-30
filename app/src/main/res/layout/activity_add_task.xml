@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context=".AddTaskActivity"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Заголовок задачи -->
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Название задачи"
+            android:inputType="text"
+            android:textSize="18sp"/>
+
+        <!-- Описание -->
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Описание"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Дата и время -->
+        <Button
+            android:id="@+id/pickDateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать дату и время"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/selectedDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дата не выбрана"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Кнопка сохранить -->
+        <Button
+            android:id="@+id/saveTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить задачу"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="398dp" />
+    </LinearLayout>
+</ScrollView>

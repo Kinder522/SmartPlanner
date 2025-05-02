@@ -3,7 +3,10 @@ package models
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @Entity(tableName = "Tasks")
 data class Task(
     @PrimaryKey(autoGenerate = true)
@@ -16,4 +19,4 @@ data class Task(
     val datetime:String,
     @ColumnInfo(name = "isDone")
     val isDone: Boolean = false
-)
+) : Parcelable
